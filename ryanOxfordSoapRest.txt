@@ -1,0 +1,79 @@
+Web services are a way to offer a service from a device or server to a connecting device, and deliver a response in a machine-readable format, such as XML or JSON. These are delivered over HTTP using request methods. In order to help with consistency, there are accepted formats that define how these requests should be structured. One of these methodologies is SOAP, which stands for Simple Object Activity Protocol. Following this protocol establishes a consistent way to set up communication with APIs. 
+First, SOAP connections have a WSDL, which is a Web Service Definition Language. These documents set up a way to define how to access a web service, and what operations it will perform. The SOAP message itself consists of the SOAP Envelope, which contains the option header, and the required body. The header contains information about authentication and other application-related information, while the body contains the message information and the details of the data. SOAP is a standardized protocol, which makes it more function-driver than REST, using a service interface to do so. They both have the express purpose of exposing business logic on a server, and SOAP does support WS-Security, which can make it more appealing security wise, but it also tents to require more bandwidth, and needs to follow a more specific and rigid structure.
+	While SOAP is a protocol, REST is considered an architectural style. Instead of a service interface, REST uses URIs, which are Uniform Resource Identifiers. It also uses HTTP request methods, but they are generally less bandwidth-intensive. For something to be considered RESTful, it needs to satisfy some basic principles. It needs to employ client-server architecture, which means there is a true separation of concerns. It separates the UI from the data storage concerns, and allows for portability and scalability. It needs to be stateless, which means that after the communication is complete, it does not exist in any context on the server. The action is completed, and once it is complete, it’s interaction with the server is done. It also needs to be cacheable, which means responses can be stored so they can be easily accessed later. The responses must be defined as cacheable or non-cacheable to make sure that data that is no longer relevant does not get passed off as valid. The system allows for being layered, and it cannot affect the overall interaction. If there is any intermediary that is being used in the process, it should not affect the outcome, and the client should not be able to tell. RESTful systems should also implement a uniform interface. There should be consistency with the actions performed based on the kinds of requests that are made. There is not a required way that requests must be interacted with, but however it does happen, it just needs to be consistent.
+	SOAP and REST are both ways to expose business logic to outside sources over the web, and they do so in a way that separates the actual operation from the result. Those connecting to the APIs do not need to know exactly how it happens, just what it will actually do for them.
+
+
+SOAP Quiz:
+Question 1:
+What international body defines and dictates the standards for SOAP?
+1. W3C (Correct)
+2. Microsoft
+3. Oracle
+4. IEEE
+
+Question 2:
+Which of these is not one of the core components of a SOAP message?
+1. Header
+2. Envelope
+3. Footer
+4. Body
+
+Question 3:
+Select all acceptable formats that a SOAP message can use:
+1. JSON
+2. C#
+3. XML (Correct)
+4. YAML
+
+Question 4:
+Which of these can NOT be set in the header of a SOAP message?
+1. mustUnderstand
+2. relay
+3. redirect (Correct
+4. role
+
+Question 5:
+What does SOAP stand for? (Even though the acronym is deprecated)
+1. Sample On Activity Protocol
+2. Send Over Access Principle
+3. Start On Access Protocol
+4. Simple Object Access Protocol
+
+
+
+REST Quiz
+Question 1:
+Which of these is not a guiding principle of REST?
+1. Stateless
+2. Layered System
+3. Cacheable
+4.Single layer system (Correct)
+
+Question 2:
+Which delivery protocol is used in a RESTful API?
+1. FTP
+2. HTTP (Correct)
+3. SFTP
+4. FSP
+
+Question 3:
+What is the key abstraction of information in REST called?
+1. Node
+2. File
+3. Resource (Correct)
+4. Hypertext
+
+Question 4:
+Which of these is not true about HTTP resource methods?
+1. They are integral in the delivery of RESTful APIs
+2. They have strict conditions in how they should be used (Correct)
+3. They can be used with different text markup languages (XML, JSON, etc.)
+4. They indicate a desired action to be performed by an identified resource
+
+Question 5:
+What does idempotent mean?
+1. A resource cannot be changed
+2. Multiple requests will have additive effects
+3. Multiple requests will have the same effect (Correct)
+4. There cannot be multiple requests
