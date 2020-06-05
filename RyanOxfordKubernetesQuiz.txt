@@ -1,0 +1,59 @@
+Question 1:
+In Kubernetes, this watches the state of your cluster, and tries to move the current cluster state closer to the desired state.
+A: Container
+B: Service
+C: Controller (Correct)
+D: Node
+https://kubernetes.io/docs/concepts/architecture/controller/
+
+Question 2:
+In Kubernetes, a kubelet is:
+A: A smaller instance of kubernetes
+B: The primary node agent that runs on each node (Correct)
+C: A container within a main container
+D: The name of the light, free version of kubernetes
+https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/#:~:text=Synopsis,object%20that%20describes%20a%20pod.
+
+Question 3:
+Which of these is NOT a control plane component?
+A: kube-scheduler
+B: etcd
+C: kube-apiserver
+D: kube-workload
+https://kubernetes.io/docs/concepts/overview/components/
+
+Question 4:
+What are the 4 C's of Cloud Native Security?
+A: Container, clock-stamp, component, cloud
+B: Cloud, Client, Computer, Cloud
+C: Cloud, Cluster, Container, Code (Correct)
+D: Clear, Concise, Compilable, Client-driven
+https://kubernetes.io/docs/concepts/security/overview/
+
+Question 5:
+How long does a volume exist in Kubernetes?
+A: 24 hours
+B: Until the container is restarted
+C: It shares a lifetime with the Pod that encloses it (Correct)
+D: Timeframe is set upon container initialization
+https://kubernetes.io/docs/concepts/storage/volumes/
+
+Question 6:
+What does a kubernetes scheduler do?
+A: Watches for newly created pods that have no node assigned, then finding the best Node to run it on (Correct)
+B: Assigned run-time timeframes to different pods so they can run efficiently together
+C: A tool to automatically start containers at preset times to run preset tests
+D: Keeps all of the containers running on a pod syncronized to the cpu clock of the hardware running the pod
+https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/
+
+Question 7:
+What is the purpose of a Replica Set?
+A: Create copies of containers
+B: Maintain a stable set of replica Pods (Correct)
+C: Maintain a stable set of replica Containers
+D: Run a set of tests on a set of duplicate containers
+
+
+
+
+
